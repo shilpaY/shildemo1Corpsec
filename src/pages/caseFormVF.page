@@ -1,0 +1,23 @@
+<apex:page showHeader="false">
+    <apex:includeLightning /> 
+ 
+    <script>
+    var userNameVal = "{!$CurrentPage.parameters.userName}";
+    var userEmailVal = "{!$CurrentPage.parameters.userEmail}";
+        $Lightning.use("c:caseFormApp", function() {
+            $Lightning.createComponent(
+                "c:handleCases",
+                {"userParameter" : userNameVal, "userEmailParameter" : userEmailVal },                
+                "newCase",
+                function(cmp) {
+                    console.log("Component created!");
+                    console.log(cmp);
+                });
+            });
+    </script>
+    
+    <div id="newCase"></div>
+</apex:page>
+
+<!--         var userEmailVal = "{!$CurrentPage.parameters.userEmail}";
+"userEmailParameter" : userEmailVal -->

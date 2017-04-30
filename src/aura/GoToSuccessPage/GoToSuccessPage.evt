@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" access="GLOBAL"> 
+        <aura:attribute name="caseInfo" type="String"/>
+        <aura:attribute name="loggedInUsrEmail" type="String"/>  
+</aura:event>

@@ -1,0 +1,40 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="GLOBAL" controller="caseFormController" >
+    <aura:attribute name="newCaseRecord" type="Case" default="{ 'sobjectType': 'Case'}" access="GLOBAL"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:registerEvent name="goToSuccessPage" type="c:GoToSuccessPage"/>
+    <aura:attribute name="loggedInUser" type="String" />
+    <aura:attribute name="userEmailValue" type="String" />
+    <div class="slds-col--padded slds-p-top--medium">
+        <div class="slds-page-header">
+            <div class="slds-grid slds-align--absolute-center">
+                <h1 class="slds-page-header__title slds-m-right--small slds-align-middle">GOC: Case Creation Form</h1>
+            </div>
+        </div>
+    </div> 
+    <div class="slds-align--absolute-center"> 
+        <div class="slds-align-middle">
+            <div class="div2">
+                <div class="slds-p-top--x-large"></div>
+                <div class="slds-form--horizontal">  
+                    <div class="slds-form-element" >
+                        <label class="slds-form-element__label" for="StatusType">Status<span style="color:red;" >*</span></label>
+                        <div class="slds-form-element__control" aura:id="StatusId">
+                            <ui:inputSelect class="slds-input" aura:id="StatusType" value="{!v.newCaseRecord.status}"  required="true"/>
+                        </div>
+                    </div>
+                    <div class="slds-form-element" >
+                        <label class="slds-form-element__label" for="CaseOriginType">Case Origin<span style="color:red;" >*</span></label>
+                        <div class="slds-form-element__control" aura:id="CaseOriginId">
+                            <ui:inputSelect class="slds-input" aura:id="CaseOriginType" value="{!v.newCaseRecord.origin}"  required="true"/>
+                        </div>
+                    </div>
+                    <div class="slds-p-top--xx-large"></div>
+                    <div class="slds-align--absolute-center">
+                        <button class="slds-button slds-button--brand" type="button" onclick="{!c.CreateNewCase}">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END BODY-->
+</aura:component>

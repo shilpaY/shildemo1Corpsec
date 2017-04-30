@@ -1,0 +1,2 @@
+<aura:event type="APPLICATION" description="Go To My Cases" access="GLOBAL" >
+</aura:event>

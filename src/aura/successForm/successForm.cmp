@@ -1,0 +1,26 @@
+<aura:component >
+    <aura:attribute name="resultVal" type="String" />
+	<div style="height: 130px"></div>
+    <div class="slds-col--padded slds-p-top--medium">
+        <div class="slds-page-header">
+            <div class="slds-grid slds-align--absolute-center">
+                <h1 class="slds-page-header__title slds-m-right--small slds-align-middle">Your Case was submitted successfully</h1>               
+                </div>
+        </div>
+            <div class="slds-align--absolute-center">
+                <div class="slds-item">
+                    <br/><br/>
+                    <p class="slds-truncate"> 
+                        <div class="slds-item--detail slds-truncate">
+                            <div class="slds-text-color--Strong">
+                                CaseID&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;
+                                {!v.resultVal}
+                            </div>
+                        </div>
+                    </p>            
+                    <br/>
+                </div>
+            </div>
+        
+    </div>
+</aura:component>

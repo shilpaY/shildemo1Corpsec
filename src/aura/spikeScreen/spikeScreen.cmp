@@ -1,0 +1,4 @@
+<aura:component >
+    <c:welcomeScreen />
+    <c:handleCases />
+</aura:component>

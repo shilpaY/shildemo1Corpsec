@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" controller="caseFormController" access="GLOBAL">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="c:GoToMyCases" action="{!c.goToMyCases}"/>
+    <aura:handler event="c:GoToCaseCreation" action="{!c.goToCaseCreation}"/>
+    <aura:handler event="c:GoToSuccessPage" action="{!c.goToSucessPage}"/>
+    <aura:attribute name="userParameter" type="String" />
+    <aura:attribute name="userEmailParameter" type="String" />
+    <div>
+        {!v.body}
+    </div>
+</aura:component>

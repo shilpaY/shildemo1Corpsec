@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <aura:registerEvent name="GoToMyCases" type="c:GoToMyCases"/>
+    <aura:registerEvent name="GoToCaseCreation" type="c:GoToCaseCreation"/>
+    <aura:attribute name="loggedInUser" type="String" />
+    <aura:attribute name="loggedInUserEmail" type="String" />
+    <aura:set attribute="body">
+        
+        <div class="slds">
+            <div style="position:absolute-center;">
+                <div class="slds-text-align--center">
+                     <div class="slds-p-top--xx-large"></div>
+                     <div class="slds-p-top--xx-large"></div>
+                    
+                    <div class="slds-page-header" role="banner">
+                        <h1 class="slds-page-header__title slds-m-right--small slds-align-middle" style="font-size:130%;">Welcome {!v.loggedInUser}</h1>
+                        <div class="slds-p-top--medium"></div>
+                    </div>
+                    <div class="slds-p-top--xx-large"></div>
+                    <div class="slds-p-top--xx-large"></div>
+                    <div class="slds-align--absolute-center">
+                        <button class="slds-button slds-button--brand" type="button" onclick="{!c.myPreviousCases}">My Cases</button>
+                        <button class="slds-button slds-button--brand" type="button" onclick="{!c.callGoCenter}">Call GO CENTER </button>
+                        <button class="slds-button slds-button--brand" type="button" onclick="{!c.logACase}">Log A Case</button>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </aura:set>
+</aura:component>

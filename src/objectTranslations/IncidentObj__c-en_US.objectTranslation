@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IncidentObj</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IncidentObj</value>
+    </caseValues>
+    <fields>
+        <label><!-- CaseId --></label>
+        <name>CaseId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Origin --></label>
+        <name>caseOrigin__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>
