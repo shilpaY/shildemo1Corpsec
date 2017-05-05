@@ -10,7 +10,7 @@
                 <div class="slds-text-align--center">
                      <div class="slds-p-top--xx-large"></div>
                      <div class="slds-p-top--xx-large"></div>
-                    
+                    <p></p>
                     <div class="slds-page-header" role="banner">
                         <h1 class="slds-page-header__title slds-m-right--small slds-align-middle" style="font-size:130%;">Welcome {!v.loggedInUser}</h1>
                         <div class="slds-p-top--medium"></div>
